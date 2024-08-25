@@ -28,6 +28,8 @@ def main():
     print("-------------")
     print(recognized_text)
 
+    # 尝试修改文字
+
 
 if __name__ == "__main__":
     main()
