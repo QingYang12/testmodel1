@@ -12,7 +12,7 @@ def main():
     script_dir = os.path.dirname(os.path.abspath(__file__))
 
     # 获取图片的绝对路径
-    image_name = "example1.png"  # 假设图片名为 example.png
+    image_name = "example.png"  # 假设图片名为 example.png
     image_path = os.path.join(script_dir, image_name)
 
     # 检查图片文件是否存在

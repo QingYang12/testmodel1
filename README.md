@@ -1,1 +1,1 @@
-1
+/usr/local/share/tessdata

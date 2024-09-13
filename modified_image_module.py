@@ -13,7 +13,7 @@ draw = ImageDraw.Draw(original_image)
 # 假设我们要在图片的(100, 100)位置添加文字
 # 如果要替换文字，你需要先确定旧文字的位置和大小
 text = "Hello, World!"
-text_color = (255, 255, 255)  # 白色
+text_color = (0, 0, 0)
 position = (100, 100)
 
 # 添加文字（这里实际上是添加，如果要替换，需要覆盖旧文字的位置）
