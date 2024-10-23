@@ -1,5 +1,13 @@
+import sys
 from PIL import Image, ImageDraw, ImageFont
-
+taskdir =""
+print(sys.argv)
+# 判断命令行参数数量是否为 2
+if len(sys.argv) == 3 and sys.argv[1] == "-i":
+    taskdir = sys.argv[2]
+else:
+    taskdir = "1727420906749"
+uploadDirRoot = "/Users/wanghao/Documents/pyimgtemp";
 # 加载原始图像
 original_image = Image.open('original_image1.png')
 
@@ -37,4 +45,5 @@ draw.rectangle([(x_old, y_old), (x_old + text_width, y_old + text_height)], fill
 draw.text((x_old, y_old), new_text, fill=text_color, font=font)
 # 保存或显示修改后的图像
 original_image.save('modified_image1.png')
+original_image.save(uploadDirRoot+"/"+taskdir+'/out.png')
 # 或者使用 original_image.show() 来直接显示图像（这取决于您的环境）

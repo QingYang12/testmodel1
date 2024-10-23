@@ -4,6 +4,8 @@ from PIL import Image
 import pytesseract
 import cv2
 
+pytesseract.pytesseract.tesseract_cmd = '/usr/local/bin/tesseract'  # 修改为你的实际路径
+
 def ocr_image(image_path):
     # 加载图片到PIL图像对象
     image = Image.open(image_path)
